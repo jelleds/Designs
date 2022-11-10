@@ -1,0 +1,69 @@
+:root{
+   --background-document: rgb(207, 227, 178);
+   --background-card: rgba(255, 255, 255, 0.5);
+   --heading:#bd8ff8;
+   --tags: rgb(153, 176, 253);
+}
+
+html{
+   font-family: Poppins;
+}
+
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: var(--background-document);
+}
+
+.card{
+   width: 400px;
+   height: auto;
+   background: var(--background-card);
+   border-radius: 20px;
+   z-index: 3;
+   padding: 30px 30px;
+}
+
+h1{
+   text-align: center;
+   color: var(--heading);
+   font-size: 3rem;
+   margin-top: 0px;
+   display: none;
+}
+p{
+   font-size:16px;
+}
+
+.profile-pic{
+   display: flex;
+   justify-content: center;
+   display: none;
+}
+
+.profile-pic img{
+   width: 250px;
+   border-radius: 50%;
+}
+
+.tags{
+   margin-top: 20px;
+   font-weight: bold;
+   color: var(--tags);
+}
+li{
+   list-style: circle;
+}
+
+.socials{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+.social-icon{
+   width: 20px;
+   color: rgb(253, 146, 175);
+}
