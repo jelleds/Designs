@@ -1,8 +1,9 @@
 :root{
-   --background-document: rgb(207, 227, 178);
-   --background-card: rgba(255, 255, 255, 0.5);
+   --background-document: #cfe3b2;
+   --background-card: #ffffff80;
    --heading:#bd8ff8;
-   --tags: rgb(153, 176, 253);
+   --tags: #99b0fd;
+   --social-icons: #fd92af;
 }
 
 html{
@@ -23,7 +24,8 @@ html{
    background: var(--background-card);
    border-radius: 20px;
    z-index: 3;
-   padding: 30px 30px;
+   padding: 40px 30px;
+   backdrop-filter: blur(20px);
 }
 
 h1{
@@ -31,7 +33,7 @@ h1{
    color: var(--heading);
    font-size: 3rem;
    margin-top: 0px;
-   display: none;
+   margin-bottom: 10px;
 }
 p{
    font-size:16px;
@@ -40,7 +42,6 @@ p{
 .profile-pic{
    display: flex;
    justify-content: center;
-   display: none;
 }
 
 .profile-pic img{
@@ -49,9 +50,10 @@ p{
 }
 
 .tags{
-   margin-top: 20px;
+   margin-top: 30px;
    font-weight: bold;
    color: var(--tags);
+   font-size: small;
 }
 li{
    list-style: circle;
@@ -65,5 +67,5 @@ li{
 
 .social-icon{
    width: 20px;
-   color: rgb(253, 146, 175);
+   color: var(--social-icons);
 }
